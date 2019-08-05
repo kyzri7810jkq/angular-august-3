@@ -1,0 +1,9 @@
+<h1>Photos</h1>
+
+
+
+<div *ngIf="loading; else elseBlock">Loading...</div>
+<div class="" *ngFor="let p of photos" #elseBlock>
+    <h4><a routerLink="/photo/{{ p.id }}">{{ p.id }} - {{ p.title }}</a></h4>
+    <img src="{{ p.thumbnailUrl }}"/>
+</div>
