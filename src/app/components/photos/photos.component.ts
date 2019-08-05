@@ -11,7 +11,7 @@ export class PhotosComponent implements OnInit {
   photos: Object;
   loading= true;
 
-  constructor(private service:PhotosService,) { }
+  constructor(private service:PhotosService) { }
 
   ngOnInit() {
     this.getPhotos();

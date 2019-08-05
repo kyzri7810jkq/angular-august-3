@@ -1,0 +1,11 @@
+<h1>Create Photos</h1>
+ 
+<form [formGroup]="frm"  (ngSubmit)="submitPhoto($event)">
+    <label>Title </label>
+    <input type="text" placeholder="Title" formControlName="title"><br>
+    <label>URL : </label>
+    <input type="text" placeholder="URL" formControlName="url"> <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>

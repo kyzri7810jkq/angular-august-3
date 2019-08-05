@@ -22,4 +22,9 @@ export class PhotosService {
     let params = {id: id };
     return this.http.get<Photos>(this.JSON_URL, { params });
   }
+
+  postData(data: any): Observable<Photos>{
+    let params = data;
+    return this.http.post<Photos>(this.JSON_URL, { params} );
+  }
 }

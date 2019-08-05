@@ -4,18 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule, routeComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PhotosDetailComponent } from './components/photos-detail/photos-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routeComponents,
-    PhotosDetailComponent
+    routeComponents
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
