@@ -1,0 +1,122 @@
+structure
+app
+ - models
+ - components
+ - services (API call)
+Observables
+- like Ajax
+
+
+A. Deploying
+
+1. HEROKU
+- JHIPSTER
+* spring boot
+* mongodb, postgresql(for HEROKU)
+* angular
+
+1.1 https://www.jhipster.tech/
+
+Install JHipster npm install -g generator-jhipster
+Create a new directory and go into it mkdir myApp && cd myApp
+Run JHipster and follow instructions on screen jhipster
+Model your entities with JDL Studio and download the resulting jhipster-jdl.jh file
+Generate your entities with jhipster import-jdl jhipster-jdl.jh
+
+1. 2. Deploying heroku
+https://www.jhipster.tech/heroku/
+
+
+github.com/microinclude/angular-nights-s2
+
+B. Netlify
+- Push the project to github
+- go to Netlify website
+(build command - convert to static)
+$ ng build --prod --aot (input field)
+- created dist 
+
+Basic build settings ()
+ng build --prod --aot
+dist/angular-nights
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// after git clone
+$ npm install
+
+// fresh start
+
+$ ng add @angular/material
+
+$ ng g c componentName
+
+$ ng serve
+
+$ ng generate service student/student
+
+$ ng generate class User
+
+$ ng g module Module_name
+----------------------------------------------
+Organize codes
+
+$ ng g module student
+$ ng g c student/student-listTemplate
+$ ng g s student/student
+
+
+--------------------------
+Forms
+1. go to app.module.ts
+- import ReactiveFormsModule and FormsModule
+2. FormGroup vs FormControl
+formGroup - entire form
+formCOntrol - each field
+
+2. Reactive vs template-driven
+
+------------------------------------------------
+
+Directives
+- *ngIf , *ngFor , *ngElse
+
+<div *ngIf="true; then listTemplate else callVar"></div>
+<ng-template #listTemplate>
+    If it is true
+</ng-template>
+<ng-template #callVar>
+    This is for else
+</ng-template>
+
+-------------------------------------------------------------------
+
+- rxjs
+- (ngrx) state management
+- cloud services
+
+
+Scaling your app
+JAMstack (Javascript, API, Markup)
+
+$ npm install @ngrx/coree @ngrx/effects @ngrx/store-devtools @ngrx/router-store --save
