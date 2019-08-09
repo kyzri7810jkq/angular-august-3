@@ -1,0 +1,17 @@
+<p>users works!</p>
+
+<button (click)="getAllUsers()">Show Users</button>
+
+<div *ngIf="clicked">
+    <div *ngIf="showloading; else elseblock">
+        loading...
+    </div>
+    
+    <ng-template #elseblock>
+        <div class="something" *ngFor="let d of dataHolder">
+            <div>
+                {{ d.id }} - {{ d.name}}
+            </div>
+        </div>
+    </ng-template>
+</div>

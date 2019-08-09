@@ -4,6 +4,7 @@ import { PhotosComponent } from './components/photos/photos.component';
 import { HomeComponent } from './components/home/home.component';
 import { PhotosDetailComponent } from './components/photos-detail/photos-detail.component';
 import { PhotosCreateComponent } from './components/photos-create/photos-create.component';
+import { UsersComponent } from './components/users/users.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
     { path:'', component: PhotosComponent },
     { path:'create', component: PhotosCreateComponent }, 
   ]},
-  { path: 'photo/:id', component: PhotosDetailComponent }
+  { path: 'photo/:id', component: PhotosDetailComponent },
+  { path: 'users', component: UsersComponent}
 ];
 
 @NgModule({
@@ -22,4 +24,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routeComponents = [PhotosComponent, HomeComponent, PhotosDetailComponent, PhotosCreateComponent]
+export const routeComponents = [PhotosComponent, HomeComponent, PhotosDetailComponent, PhotosCreateComponent, UsersComponent]
